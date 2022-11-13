@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 65%;
+    overflow-x: hidden;
+    scroll-padding-top:5.5rem;
+}
+
+body{
+    background-color: #181717;
+}
+
+/* Header */
+
+header{
+    top: 0;
+    left:0;
+    right:0;
+    padding: 1rem 7%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    position: fixed;
+    background-color: rgb(44, 44, 44);
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size:4rem;
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+}
+
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #ffffff;
+    font-family: 'Indie Flower', cursive;
+}
+
+header .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color: #fff;
+    background: #6a0f86;
+}
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #fff;
+    border-radius: 50%;
+    background: #6a0f86;
+    
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color: #6a0f86;
+    background: #fff;
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+ 
+/* Banner */
+
+.banner{
+    background: url(img/Banner/Banner.jpg) no-repeat;
+}
+
+.home .banner{
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    background-size: cover !important;
+    background-position: center !important;
+    justify-content:flex-end;
+    padding: 9%;
+}
+
+/* Comics */
+
+.Destacado{
+    padding:5rem;
+}
+
+.Destacado .box{
+    width: 250px;
+    height: 500px;
+}
+
+.box img{
+    width: 250px;
+    height: 500px;
+}
+
+.DC{
+    padding:5rem;
+}
+
+.DC .box{
+    width: 250px;
+    height: 500px;
+}
+
+.Marvel{
+    padding:5rem;
+}
+
+.Marvel .box{
+    width: 250px;
+    height: 500px;
+ }
+
+
+.Comics-Variados{
+    padding:5rem;
+}
+
+.Comics-Variados .box{
+    width: 250px;
+    height: 500px;
+ }
+
+ .Manga{
+    padding:5rem;
+}
+
+.Manga .box{
+    width: 250px;
+    height: 500px;
+}
+
+/* Diseño Celular*/
+
+.comics-low-r{
+    display: none;
+    padding-top: 5rem;
+}
+
+.imagen-r img{
+    width: 250px;
+    height: 500px;
+    padding-bottom: 5rem;
+}
+    
+.imagen-r{
+    text-align: center;
+}
+
+.imagen-low-r{
+    width: 190px;
+    height: 290px;
+    padding: 0.5rem;
+}
+    
+.contenedor{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+    
+.redir{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+    color: #fff;
+    font-family: 'Indie Flower', cursive;
+}
+
+/* Footer */
+
+footer{
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;  
+}
+
+footer .logo{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Indie Flower', cursive;
+}
+
+.logo h2{
+    font-family: 'Indie Flower', cursive;
+    color: white;
+}
+
+.legal h2{
+    text-align: center;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    padding-bottom: 1rem;
+}
+
+.legal a{
+    color: white;
+    font-size: 3.7rem;
+}
+
+.redes a{
+    color: white;
+    font-size: 3.7rem;
+}
+
+.redes h2{
+    text-align: center;
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    padding-bottom: 1rem;
+}
+
+/* Iniciar sesion y registrarse */
+
+.clear{
+	clear: both;
+}
+
+.main{
+	width: 100%;
+	height: 85.25vh;
+	background-color: #181717;
+}
+
+.card{
+	width: 400px;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.card-title{
+	width: 100%;
+}
+
+.card-title h3{
+	color: #6a0f86;
+	text-align: center;
+	padding: 20px 0;
+    font-size: 2rem;
+}
+
+.card-title h3 > span{
+	color: #848484;
+}
+
+.card-body{
+	background-color: #121212;
+	padding: 10px 0px;
+	border-radius: 5px;
+	width: 100%;
+	height: 350px;
+	overflow: hidden;
+}
+
+.card-body-top{
+	width: 100%;
+	position: relative;
+	border-bottom: 1px solid #262626;
+}
+
+.card-body-top > .btn{
+	border: 0;
+	background-color: transparent;
+	color: #848484;
+	font-size: 16px;
+	letter-spacing: 1px;
+	font-weight: 500;
+	width: 180px;
+	padding: 20px 0;
+}
+
+#login{
+	color: #6a0f86;
+}
+
+#register{
+	color: #848484;
+}
+
+#pointer-btn{
+	position: absolute;
+	bottom:-1px;
+	left: 30px;
+	width: 120px;
+	height: 2px;
+	color: #6a0f86;
+	transition: 0.5s all ease;
+}
+
+
+
+.card-body-login{
+	width: 100%;
+	padding: 15px 20px;
+	position: relative;
+}
+
+.card-body-login > #login-form{
+	position: absolute;
+	top: 30px;
+	left: 25px;
+	text-align: center;
+	transition: 0.5s all ease;
+}
+
+.card-body-login > #register-form{
+	position: absolute;
+	top: 20px;
+	left: 450px;
+	text-align: center;
+	transition: 0.5s all ease;
+}
+
+.input-form{
+	border: none;
+	background-color: transparent;
+	color: #fff;
+	border-bottom: 1px solid #6a0f86;
+	width: 350px;
+	padding: 15px 0px;
+	font-size: 15px;
+	letter-spacing: 1px;
+	outline: none;
+}
+
+.submit-form{
+	background-color: #6a0f86;
+	color: #000;
+	border: none;
+	padding: 10px 25px;
+	font-size: 15px;
+	cursor: pointer;
+	letter-spacing: 1px;
+	border-radius: 50px;
+}
+
+/* Comics Datos*/
+
+.comics-datos-pagina{
+    padding: 7% 0%;
+    padding-left: 25%;
+}
+
+.comics-datos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.comics-datos .columna{
+    flex:0 0 auto;
+    width:50%;
+}
+
+.comics-datos .columna.imagen{
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+    height: 600px;
+    width: 350px;
+}
+
+.comics-datos .columna.contenido .datos-texto{
+    padding:40px 50px;
+}
+
+b{
+    color:  #8708aa;
+}
+
+li{
+    color: white;
+    list-style: none;
+    font-size: 24px;
+    font-family: 'Indie Flower', cursive;
+}
+
+.comics-datos .columna.contenido .datos-texto h5{
+    color: white;
+    font-weight:700;
+    font-size:25px;
+    margin-bottom:20px;
+    font-family: 'Indie Flower', cursive;
+}
+
+/* Media Query */
+
+@media(max-width: 960px){
+    html{
+        font-size: 55%; 
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+    section{
+        padding:2rem;
+    }
+}
+
+@media(max-width: 768px){
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: black;
+        border-top: .1rem solid rgba(0,0,0,.2);
+        border-bottom: .1rem solid rgba(0,0,0,.2);
+        padding:1rem;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar a{
+        display:block;
+        padding:1.5rem;
+        margin: 1rem;
+        font-size: 2rem;
+        background: #6a0f86;
+    }
+    .home .box .content h3{
+        font-size:5rem;
+    } 
+}
+
+@media(max-width: 650px){
+    html{
+        font-size: 50%;
+    }
+    .Destacado{
+        display: none;
+    }
+    .DC{
+        display: none;
+    }
+    .Marvel{
+        display: none;
+    }
+    .Comics-Variados{
+        display: none;
+    }
+    .Manga{
+        display: none;
+    }
+    .comics-low-r{
+        display: block;
+    }
+    li{
+        list-style: none;
+        font-size: 10px;
+    }
+    .comics-datos-pagina{
+        padding-left: 10%;
+        padding-top: 20% ;
+    }
+    .comics-datos .columna{
+        flex:0 0 auto;
+        width:100%;
+    }
+    .comics-datos .columna.contenido .datos-texto{
+        padding:30px 10px;
+    }
+    li{
+        list-style: none;
+        font-size: 17px;
+    }
+}
+
+
+
+
+
+
