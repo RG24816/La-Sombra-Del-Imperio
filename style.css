@@ -95,12 +95,9 @@ header .icons #menu-bars{
 
 .home .banner{
     min-height: 500px;
-    display: flex;
-    align-items: center;
     background-size: cover !important;
     background-position: center !important;
-    justify-content:flex-end;
-    padding: 9%;
+    padding-top: 14%;
 }
 
 /* Comics */
@@ -420,12 +417,6 @@ li{
     html{
         font-size: 55%; 
     }
-    header{
-        padding: 1rem 2rem;
-    }
-    section{
-        padding:2rem;
-    }
 }
 
 @media(max-width: 768px){
@@ -499,6 +490,19 @@ li{
     li{
         list-style: none;
         font-size: 17px;
+    }
+
+    .home{
+        padding-top: 10%;
+    }
+/*
+    .banner{
+        background: url(img/DC/Blackest-Night.jpg) no-repeat;
+    }
+*/
+    .home .banner{
+        min-height: 235px;
+        padding-top: 10%;
     }
 }
 
