@@ -266,7 +266,8 @@ footer .logo{
 	color: #6a0f86;
 	text-align: center;
 	padding: 20px 0;
-    font-size: 2rem;
+    	font-size: 2rem;
+	font-family: 'Indie Flower', cursive;
 }
 
 .card-title h3 > span{
