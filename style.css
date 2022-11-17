@@ -95,9 +95,12 @@ header .icons #menu-bars{
 
 .home .banner{
     min-height: 500px;
+    display: flex;
+    align-items: center;
     background-size: cover !important;
     background-position: center !important;
-    padding-top: 14%;
+    justify-content:flex-end;
+    padding: 9%;
 }
 
 /* Comics */
@@ -263,8 +266,7 @@ footer .logo{
 	color: #6a0f86;
 	text-align: center;
 	padding: 20px 0;
-    	font-size: 2rem;
-	font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
 }
 
 .card-title h3 > span{
@@ -415,7 +417,13 @@ li{
 
 @media(max-width: 960px){
     html{
-        font-size: 50%; 
+        font-size: 55%; 
+    }
+    header{
+        padding: 1rem 2rem;
+    }
+    section{
+        padding:2rem;
     }
 }
 
@@ -452,7 +460,7 @@ li{
 
 @media(max-width: 650px){
     html{
-        font-size: 50%;
+        font-size: 40%;
     }
     .Destacado{
         display: none;
@@ -490,19 +498,6 @@ li{
     li{
         list-style: none;
         font-size: 17px;
-    }
-
-    .home{
-        padding-top: 10%;
-    }
-/*
-    .banner{
-        background: url(img/DC/Blackest-Night.jpg) no-repeat;
-    }
-*/
-    .home .banner{
-        min-height: 235px;
-        padding-top: 10%;
     }
 }
 
